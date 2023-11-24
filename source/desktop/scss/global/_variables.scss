@@ -1,0 +1,71 @@
+@import "./mixins/breakpoints";
+
+// INFO: html global
+html {
+  font-size: 62.5% !important;
+}
+
+$font-size-base: 1.4rem;
+
+// INFO:  Fonts-weight
+$font-weight-italic: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-semibolder: 800;
+$font-weight-extraBold: 900;
+
+
+// INFO: Breakpoint for responsive
+$md :768px;
+$lg :1024px;
+$xl: 1280px;
+
+$grid-breakpoints: (
+  ) !default;
+$grid-breakpoints: map-merge((md: 768px,
+      lg: 1024px,
+      xl: 1280px,
+    ),
+    $grid-breakpoints
+);
+
+// 1024-1279
+@include media-breakpoint-between(lg, lg) {
+  :root {
+    --container: 980px;
+  }
+}
+
+//1280
+@include media-breakpoint-up(xl) {
+  :root {
+    --container: 1170px;
+  }
+}
+
+
+
+:root.nhandan {
+  $body-bg: #fff;
+  $body-color: #343A40;
+  $font-family-sans-serif: Arial, Helvetica, sans-serif;
+  $font-family-serif: Arial, Helvetica, sans-serif;
+  $gutter-body : 20px;
+}
+
+:root.cuoituan {}
+
+:root.hangthang {}
+
+:root.thoinay {}
+
+:root.dantoc {}
+
+:root.ocop {}
+
+:root.kinhtevung {}
+
+:root.languages {}

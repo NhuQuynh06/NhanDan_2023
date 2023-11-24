@@ -1,0 +1,1 @@
+{"version":3,"sources":["nhandan.scss"],"names":[],"mappings":"AACI,mBACI,iBAAA","file":"../scss/nhandan.css","sourcesContent":[":root.nhandan {\r\n    body {\r\n        background-color: lightblue;\r\n    }\r\n}"]}
